@@ -3,14 +3,14 @@
 #include  <malloc.h> 
 #include <Windows.h>
 
-extern const char* WindowsErrorString(void);
+#include"Header.h"
 
 DWORD LastWriteError = 0;
 BOOL large_drive = FALSE;
 
 #define WRITE_TIMEOUT               5000
 #define WRITE_RETRIES               4
-#define uprintf printf
+
 #define FAC(f)                         ((f)<<16)
 
 // A WriteFile() equivalent, with up to nNumRetries write attempts on error.

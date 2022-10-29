@@ -127,10 +127,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="devices.cpp" />
     <ClCompile Include="read.c" />
     <ClCompile Include="utils.c" />
     <ClCompile Include="write.c" />
     <ClCompile Include="mbrwriter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dev.h" />
+    <ClInclude Include="drive.h" />
+    <ClInclude Include="Header.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
